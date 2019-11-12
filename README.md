@@ -1,33 +1,59 @@
-# hackernews-async-ts
+# egg-vue-typescript-boilerplate
 
-[Hacker News](https://news.ycombinator.com/) showcase using typescript && egg
+Single Page Application Isomorphic Example for Egg + Vue, Front-End and Node of The Application are Written in TypeScript.
+
+## Document
+
+- https://www.yuque.com/easy-team/egg-vue
+- https://www.yuque.com/easy-team/easywebpack
+
 
 ## QuickStart
 
-### Development
+- Development Mode
 
 ```bash
-$ npm i
+$ npm install -g easywebpack-cli
+$ easy init
+$ npm install
 $ npm run dev
-$ open http://localhost:7001/
+$ open http://localhost:7001
 ```
 
-Don't tsc compile at development mode, if you had run `tsc` then you need to `npm run clean` before `npm run dev`.
-
-### Deploy
+- Publish Mode
 
 ```bash
-$ npm run tsc
-$ npm start
+npm run tsc
+npm run build
+npm start
 ```
 
-### Npm Scripts
+## Features
 
-- Use `npm run lint` to check code style
-- Use `npm test` to run unit test
-- se `npm run clean` to clean compiled js at development mode once
+- ✔︎ Single Page Application, Support Vue Server Side Render and Client Side Render Modes, Rendering Cache, Automatic Downgrade
+- ✔︎ Front-End and Node of The Application are Written in TypeScript, Use `vue-property-decorator` and `vuex-class`
+- ✔︎ Build with Webpack + TypeScript, Auto Building, Hot Reload, Code Splitting, High Speed, Performance Optimization
 
-### Requirement
+## Rendering
 
-- Node.js 8.x
-- Typescript 2.8+
+- Font-End TypeScript
+
+![Font-End TypeScript](https://github.com/easy-team/egg-vue-typescript-boilerplate/blob/master/docs/images/vue-front-end.png?raw=true)
+
+- Node TypeScript
+
+![Node TypeScript](https://github.com/easy-team/egg-vue-typescript-boilerplate/blob/master/docs/images/vue-node.png?raw=true)
+
+- UI ScreenShot
+
+![UI ScreenShot](https://github.com/easy-team/egg-vue-typescript-boilerplate/blob/master/docs/images/vue-admin-ui.png?raw=true)
+
+## TypeScript
+
+- https://github.com/kaorun343/vue-property-decorator
+- https://github.com/ktsn/vuex-class
+
+
+## License
+
+[MIT](LICENSE)

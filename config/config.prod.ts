@@ -1,6 +1,13 @@
-import { EggAppConfig, PowerPartial } from 'egg';
+/**
+ * production
+ *
+ *  prod + default（override）
+ */
 
-export default () => {
-  const config: PowerPartial<EggAppConfig> = {};
-  return config;
+import { Application, EggAppConfig } from 'egg';
+
+export default (appInfo: EggAppConfig) => {
+  const exports: any = {};
+
+  return exports;
 };
