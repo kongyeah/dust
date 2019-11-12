@@ -63,6 +63,15 @@
   },
   "keys": "/Users/tianya/Documents/kongyeah/dust/config/config.default.ts",
   "middleware": "/Users/tianya/Documents/kongyeah/dust/config/config.default.ts",
+  "io": {
+    "init": "/Users/tianya/Documents/kongyeah/dust/config/config.default.ts",
+    "namespace": {
+      "/": {
+        "connectionMiddleware": "/Users/tianya/Documents/kongyeah/dust/config/config.default.ts",
+        "packetMiddleware": "/Users/tianya/Documents/kongyeah/dust/config/config.default.ts"
+      }
+    }
+  },
   "development": {
     "watchDirs": "/Users/tianya/Documents/kongyeah/dust/config/config.local.ts",
     "ignoreDirs": "/Users/tianya/Documents/kongyeah/dust/config/config.local.ts",
@@ -231,6 +240,14 @@
     },
     "dependencies": {
       "@hubcarl/json-typescript-mapper": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
+      "axios": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
+      "egg": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
+      "egg-socket.io": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
+      "egg-view-vue-ssr": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
+      "egg-webpack": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
+      "egg-webpack-vue": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
       "element-ui": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
       "extend": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
       "font-awesome": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
@@ -242,19 +259,12 @@
       "shortid": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
       "showdown": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
       "simplemde": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
-      "axios": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
-      "egg": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
-      "egg-scripts": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
-      "egg-cors": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
-      "egg-webpack": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
-      "egg-webpack-vue": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
-      "egg-view-vue-ssr": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
       "vue": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
+      "vue-property-decorator": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
       "vue-router": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
       "vuex": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
-      "vuex-router-sync": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
-      "vue-property-decorator": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
-      "vuex-class": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js"
+      "vuex-class": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",
+      "vuex-router-sync": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
       "@types/lodash": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg/config/config.default.js",

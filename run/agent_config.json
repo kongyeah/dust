@@ -180,6 +180,15 @@
       },
       "afterRender": "<Function afterRender>"
     },
+    "io": {
+      "init": {},
+      "namespace": {
+        "/": {
+          "connectionMiddleware": [],
+          "packetMiddleware": []
+        }
+      }
+    },
     "cors": {},
     "webpack": {
       "port": 9000,
@@ -203,8 +212,8 @@
       "version": "1.0.0",
       "description": "H5代码生成平台",
       "scripts": {
-        "start": "egg-scripts start",
-        "dev": "egg-bin dev -r egg-ts-helper/register",
+        "start": "egg-scripts start --sticky",
+        "dev": "egg-bin dev -r egg-ts-helper/register --sticky",
         "debug": "egg-bin debug",
         "build": "easy build",
         "tsc": "ets && tsc -p tsconfig.json",
@@ -217,6 +226,14 @@
       },
       "dependencies": {
         "@hubcarl/json-typescript-mapper": "2.0.0",
+        "axios": "^0.18.1",
+        "egg": "^2.3.0",
+        "egg-cors": "^2.1.1",
+        "egg-scripts": "^2.10.0",
+        "egg-socket.io": "^4.1.6",
+        "egg-view-vue-ssr": "^3.0.5",
+        "egg-webpack": "^4.4.7",
+        "egg-webpack-vue": "^2.0.0",
         "element-ui": "^2.0.8",
         "extend": "\\x7e3.0.0",
         "font-awesome": "^4.7.0",
@@ -228,19 +245,12 @@
         "shortid": "^2.2.8",
         "showdown": "^1.8.6",
         "simplemde": "^1.11.2",
-        "axios": "^0.18.1",
-        "egg": "^2.3.0",
-        "egg-scripts": "^2.10.0",
-        "egg-cors": "^2.1.1",
-        "egg-webpack": "^4.4.7",
-        "egg-webpack-vue": "^2.0.0",
-        "egg-view-vue-ssr": "^3.0.5",
         "vue": "^2.5.0",
+        "vue-property-decorator": "^7.2.0",
         "vue-router": "^3.0.1",
         "vuex": "^3.0.1",
-        "vuex-router-sync": "^5.0.0",
-        "vue-property-decorator": "^7.2.0",
-        "vuex-class": "^0.3.1"
+        "vuex-class": "^0.3.1",
+        "vuex-router-sync": "^5.0.0"
       },
       "devDependencies": {
         "@types/lodash": "^4.14.117",
@@ -554,6 +564,19 @@
       "from": "/Users/tianya/Documents/kongyeah/dust/config/plugin.ts",
       "path": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg-view-vue-ssr",
       "version": "3.3.1"
+    },
+    "io": {
+      "enable": true,
+      "package": "egg-socket.io",
+      "name": "io",
+      "dependencies": [
+        "session"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/tianya/Documents/kongyeah/dust/config/plugin.ts",
+      "path": "/Users/tianya/Documents/kongyeah/dust/node_modules/egg-socket.io",
+      "version": "4.1.6"
     },
     "cors": {
       "package": "egg-cors",
